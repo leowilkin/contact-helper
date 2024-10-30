@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact a Hack Clubber</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon-rounded.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <a href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 10px; border: 0; width: 192px; z-index: 999;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"/></a>
+        <h1 id="contact-title">Contact a Hack Clubber</h1>
+        <div id="onboarding-note" class="onboarding-note" style="display: none;">
+            <p>Welcome! To create a personalised contact link, set up an Airtable formula that passes parameters for Slack link, email, and name. Your link might look like:</p>
+            <p><code>https://contact-helper.hackclub.com?slack=YOUR_SLACK_LINK&email=YOUR_EMAIL&name=YOUR_NAME</code></p>
+        </div>
+        <div id="error-message" class="error-message" style="display: none;"></div>
+        <div class="buttons" id="contact-buttons">
+            <button id="slack-button" class="contact-button" style="display: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" alt="Slack logo" class="icon">
+                <span id="slack-text"></span>
+            </button>
+            <button id="email-button" class="contact-button" style="display: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Email icon" class="icon">
+                <span>Email</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer in bottom right corner -->
+    <div class="footer">
+        <a href="https://hackclub.com/" target="_blank">© 2024 Hack Club. 501(c)(3) nonprofit (EIN: 81-2908499)</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

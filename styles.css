@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+        format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  body {
+      font-family: 'Phantom Sans', Arial, sans-serif; /* Use the custom font */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #121212; /* Dark background */
+      color: #E0E0E0; /* Light text */
+      padding-top: 70px; /* Adjust for banner */
+  }
+  
+  .container {
+      text-align: center;
+      padding: 20px;
+      background-color: #1E1E1E; /* Slightly lighter dark for contrast */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      max-width: 500px; /* Ensure container doesn't stretch too wide */
+      margin: auto; /* Center horizontally */
+  }
+  
+  h1 {
+      margin-bottom: 20px;
+      color: #FFFFFF; /* Pure white for titles */
+  }
+  
+  .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center; /* Center the buttons */
+  }
+  
+  .contact-button {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Center the content horizontally */
+      gap: 10px; /* Adjust gap between icon and text */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Phantom Sans', Arial, sans-serif; /* Set font for button text */
+      font-size: 16px;
+      color: #FFFFFF;
+      transition: background-color 0.3s ease;
+      padding-left: 15px; /* Added padding to the left for more space */
+      padding-right: 15px; /* Added padding to the right for symmetry */
+      width: 100%; /* Make the button take full width of the container */
+  }
+  
+  .contact-button img.icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px; /* Additional margin between icon and text */
+  }
+  
+  /* Dark Slack button */
+  #slack-button {
+      background-color: #4A154B;
+  }
+  
+  #slack-button:hover {
+      background-color: #6e1e6e;
+  }
+  
+  /* Dark Email button */
+  #email-button {
+      background-color: #D44638;
+  }
+  
+  #email-button:hover {
+      background-color: #e05c4e;
+  }
+  
+  /* Onboarding and error messages */
+  .onboarding-note, .error-message {
+      margin-top: 15px;
+      color: #FFD700; /* Light yellow color for visibility */
+      font-size: 14px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      max-width: 450px; /* Limit the width of the note */
+      margin: 15px auto; /* Center horizontally with margin */
+      word-wrap: break-word; /* Break long words to avoid overflow */
+      overflow-wrap: break-word; /* Ensure text wraps correctly */
+  }
+  
+  .onboarding-note code {
+      color: #FFD700;
+      background-color: #444;
+      padding: 2px 5px;
+      border-radius: 3px;
+  }
+  
+  .error-message {
+      color: #FF6347; /* Light red for error visibility */
+  }
+  
+  /* Footer styles */
+  .footer {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #1E1E1E;
+      color: #E0E0E0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 12px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+  }
+  
+  .footer a {
+      color: #FFD700;
+      text-decoration: none;
+  }
+  
+  .footer a:hover {
+      color: #FFF5BA; /* Slightly lighter color on hover */
+  }
+  
