@@ -1,7 +1,5 @@
-// Function to validate Slack link
 function isValidSlackLink(link) {
-    // Regular expression to check if the link contains hackclub.slack.com/team/
-    const slackRegex = /^https:\/\/hackclub\.slack\.com\/team\/.*$/;
+    const slackRegex = /^https:\/\/hackclub\.slack\.com\/team\/U0.*$/;
     return slackRegex.test(link);
 }
 
