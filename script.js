@@ -30,10 +30,10 @@ function displayContactLinks() {
     }
 
     // Validate the Slack link
-    if (slackLink && !isValidSlackLink(slackLink)) {
-        errorMessage.textContent = "Invalid Slack link. Please provide a valid Hack Club Slack link.";
-        errorMessage.style.display = 'block';
-        return;
+    if (slackLink && isValidSlackLink(slackLink)) {
+        slackButton.style.display = 'block';
+        slackText.textContent = `Slack`;
+        slackButton.onclick = () => window.location.href = slackLink; // Open Slack link
     }
 
     // Validate the email address
@@ -47,12 +47,6 @@ function displayContactLinks() {
     errorMessage.style.display = 'none';
 
     // Update the contact buttons
-    if (slackLink) {
-        slackButton.style.display = 'block';
-        slackText.textContent = `Slack`;
-        slackButton.onclick = () => window.location.href = slackLink; // Open Slack link
-    }
-
     if (email) {
         emailButton.style.display = 'block';
         emailButton.onclick = () => window.location.href = `mailto:${email}`; // Open email client
