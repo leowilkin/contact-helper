@@ -12,7 +12,7 @@ function isValidEmail(email) {
 
 // Main function to check parameters and display contact links
 function displayContactLinks() {
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(window.location.search.replace(/\+/g, '%2B'));
     const slackLink = urlParams.get('slack');
     const email = urlParams.get('email');
     const name = urlParams.get('name');
